@@ -4,21 +4,78 @@
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: lightskyblue;
+ul,
+ol,
+li {
+    list-style: none;
 }
 
-.itens {
-    width: 25%;
-    height: 25%;
+body{
+
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100px;
+    background-color: #f8f8f8;
+    color: rgba(0, 0, 0, .5);
+}
+
+.primeiraParte{
+    height: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    gap: 60%;
+}
 
+.listaItens{
+    display: flex;
+    gap: 30px;
+    color: black;
+}
+
+.listaItens li{
+    gap: 10px;
+}
+.welcome {
+    width: 210px;
+    border-right:1px solid;
+    color: rgba(0, 0, 0, .5);
+}
+.contato{
+    width: 140px;
+    border-right:1px solid;
+}
+.login{
+    width: 70px;
+    border-right:1px solid;
+}
+.links{
+    text-decoration: none;
+    list-style: none;
+    color: rgba(0, 0, 0, .5);
+
+}
+
+.segundaParte{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 210px;
+}
+
+.logo{
+    height: 100%;
+}
+.icons img, i {
+    width: 25px;
+    font-size: 25px;
 }
