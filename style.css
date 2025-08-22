@@ -11,71 +11,81 @@ li {
 }
 
 body{
-
     width: 100vw;
     height: 100vh;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100px;
-    background-color: #f8f8f8;
-    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
 }
 
-.primeiraParte{
+.primeiraParte {
     height: 50px;
     width: 100%;
     display: flex;
+    justify-content: space-between; /* separa esquerda e direita */
     align-items: center;
-    justify-content: center;
-    gap: 60%;
-}
-
-.listaItens{
-    display: flex;
-    gap: 30px;
-    color: black;
-}
-
-.listaItens li{
-    gap: 10px;
-}
-.welcome {
-    width: 210px;
-    border-right:1px solid;
     color: rgba(0, 0, 0, .5);
+    padding: 0 40px; /* dá espaçamento nas laterais */
 }
-.contato{
-    width: 140px;
-    border-right:1px solid;
+
+.nossasMarcas {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
 }
-.login{
-    width: 70px;
-    border-right:1px solid;
-}
-.links{
-    text-decoration: none;
+
+.listaItens {
+    display: flex;
+    gap: 20px; /* controla a distância entre os textos */
     list-style: none;
-    color: rgba(0, 0, 0, .5);
-
+    margin: 0;
+    padding: 0;
 }
 
-.segundaParte{
+.listaItens li {
+    position: relative;
+    padding-left: 15px; /* espaço antes do separador */
+}
+
+.listaItens li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.listaItens li a:hover {
+    color: dodgerblue;
+    transition: 0.3s ease;
+}
+
+.barrinha li:not(:first-child) {
+    border-left: 1px solid rgba(0,0,0,.3);
+}
+
+.segundaParte {
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 210px;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 12px;
+    background-color: #f8f8f8;
+    padding: 0 40px; /* dá espaçamento nas laterais */
 }
 
 .logo{
-    height: 100%;
+    height: 16px;
 }
-.icons img, i {
-    width: 25px;
-    font-size: 25px;
+
+.icons {
+    width: 70px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
 }
