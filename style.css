@@ -70,7 +70,7 @@ header {
     justify-content: space-between;
     gap: 2rem;
     font-size: 12px;
-    background-color: #f3d6ea83;
+    background-color: #ebd8e583;
     padding: 0 40px; /* espaço só dos lados */
 }
 
@@ -107,6 +107,7 @@ header {
     flex-direction: row;
     gap: 24px;
     flex-wrap: wrap;
+    border: solid 2px red;
 }
 
 .card{
