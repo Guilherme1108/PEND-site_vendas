@@ -3,18 +3,14 @@
 import produtos from "./produtos_atualizados.json" with {type: "json"}
 
 function criarCards(cards) {
-    const body = document.body
-    const divContainer = document.createElement ('div')
-  
-    const divCard = document.createElement ('div')
+    const divConjuntoCards = document.getElementById('containerCards')
+    const divCard = document.createElement('div')
 
     const imagemProduto = document.createElement('img')
     const nomeProduto = document.createElement('span')
     const descricaoProduto = document.createElement('p')
     const precoProduto = document.createElement('span')
 
-    divContainer.classList.add('container')
-   
     divCard.classList.add('card')
 
     imagemProduto.classList.add('imgProduto')
@@ -27,16 +23,12 @@ function criarCards(cards) {
     descricaoProduto.textContent = cards.descricao
     precoProduto.textContent = cards.preco
 
-    body.appendChild(divContainer)
-    divContainer.appendChild(divConjuntoCards)
     divConjuntoCards.appendChild(divCard)
     divCard.append(imagemProduto, nomeProduto, descricaoProduto, precoProduto)
 
 }
-const divConjuntoCards = document.createElement ('div')
+
 function carregarCards() {
-    
-    divConjuntoCards.classList.add('conjunto-cards')
     produtos.forEach(criarCards)
 }
 

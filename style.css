@@ -89,7 +89,7 @@ header {
 /*****************************************************************************************************************************/
 /* MAIN */
 
-.container{
+main{
     height: auto;
     width: 100vw;
     display: flex;
@@ -107,7 +107,6 @@ header {
     flex-direction: row;
     gap: 24px;
     flex-wrap: wrap;
-    border: solid 2px red;
 }
 
 .card{
@@ -115,18 +114,26 @@ header {
     width: 32vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     box-shadow: black 0 1px 10px;
     border-radius: 4px;
-    padding: 24px;
-    text-align: center;
+    text-align: start;
+    gap: 12px;
+    padding: 12px;
 }
 
 .imgProduto{
+    height: 40%;
     width: 60%;
 }
 
 .nomeProduto{
     font-size: 2rem;
+    font-weight: bolder;
+}
+
+.preco{
+    font-size: 2rem;
+    font-weight: bolder;
 }
