@@ -124,8 +124,8 @@ main{
 }
 
 .imgProduto{
-    height: 40%;
-    width: 60%;
+    height: 30%;
+    width: 50%;
 }
 
 .nomeProduto{
@@ -134,6 +134,6 @@ main{
 }
 
 .preco{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
 }
