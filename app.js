@@ -14,6 +14,13 @@ function criarCards(cards) {
     const divConjuntoCards = document.getElementById('containerCards')
     const divCard = document.createElement('div')
 
+    //Função de click no botão
+    // function clickCard{
+    // }
+    // divCard.addEventListener('click', clickCard)
+
+
+
     const imagemProduto = document.createElement('img')
     const nomeProduto = document.createElement('span')
     const descricaoProduto = document.createElement('p')

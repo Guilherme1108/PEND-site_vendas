@@ -112,6 +112,7 @@ main{
 .card{
     height: 40vh;
     width: 32vh;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,6 +122,14 @@ main{
     text-align: start;
     gap: 12px;
     padding: 12px;
+}
+
+.card:hover {
+    .imgProduto{
+        height: 35%;
+        width: 55%;
+        transition: 0.5s ease;
+    }
 }
 
 .imgProduto{
