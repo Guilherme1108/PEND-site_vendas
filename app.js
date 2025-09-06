@@ -14,10 +14,11 @@ function criarCards(cards) {
     const divConjuntoCards = document.getElementById('containerCards')
     const divCard = document.createElement('div')
 
-    //Função de click no botão
-    // function clickCard{
-    // }
-    // divCard.addEventListener('click', clickCard)
+//    Função de click no botão
+    function clickCard(){
+        alert(`O produto ${cards.nome}\nestá disponível por ${cards.preco}. Aproveite!`)
+    }
+    divCard.addEventListener('click', clickCard)
 
 
 
